@@ -23,7 +23,7 @@ body{
   line-height:1.45;
 }
 
-/* NAVBAR */
+
 .site-header .navbar{
   background: linear-gradient(90deg, rgba(91,36,48,0.95), rgba(60,20,34,0.95));
   padding: .6rem 0;
@@ -35,13 +35,12 @@ body{
 .brand-title{ font-weight:700; font-size:1.05rem; color:var(--text); }
 .brand-sub{ font-size:0.7rem; color:var(--muted); display:block; }
 
-/* Buttons */
+
 .btn-primary{ background: linear-gradient(90deg, var(--accent), #5b24b0); border:0; box-shadow: 0 6px 18px rgba(154,47,255,0.12); }
 .btn-primary:hover{ transform: translateY(-2px); }
 .btn-wine{ background:var(--wine); color:var(--text); border:0; }
 .btn-outline-light{ border:1px solid rgba(255,255,255,0.08); color:var(--text); }
 
-/* Cards */
 .card{
   background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
   border: 1px solid rgba(255,255,255,0.04);
@@ -49,11 +48,11 @@ body{
   box-shadow: var(--shadow);
 }
 
-/* Highlight */
+
 .highlight img{ border-top-left-radius: calc(var(--radius) - 2px); border-top-right-radius: calc(var(--radius) - 2px); }
 .highlight .card-body{ padding:1.6rem; }
 
-/* Form controls (maiores e mais visíveis) */
+
 .form-control, .form-select, textarea{
   background: rgba(255,255,255,0.02);
   border: 1px solid rgba(255,255,255,0.06);
@@ -70,26 +69,26 @@ body{
   transform: translateY(-2px);
 }
 
-/* Subscribe card */
+
 .subscribe-card h5{ margin-bottom:1rem; color:var(--accent); font-weight:700; }
 
-/* Table */
+
 .table-hover tbody tr:hover{ background: rgba(154,47,255,0.04); transform: translateX(2px); }
 
-/* Sidebar */
+
 .ad-card, .contacts{ border-left: 4px solid rgba(154,47,255,0.12); }
 
-/* Section blocks */
+
 .section-block{ padding: 40px 0; margin-top: 24px; border-top: 1px solid rgba(255,255,255,0.02); }
 .section-block h3{ color: var(--accent); margin-bottom: 16px; }
 
-/* News cards */
+
 .news-card{ background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005)); border-radius:10px; }
 
-/* Download button style */
+
 a[download], .download-box .btn{ background: rgba(154,47,255,0.12); border: 1px solid rgba(154,47,255,0.14); color: var(--text); }
 
-/* Footer */
+
 .site-footer{ background: linear-gradient(90deg, rgba(91,36,48,0.95), rgba(60,20,34,0.95)); padding:28px 0; color:var(--text); margin-top:40px; border-top: 1px solid rgba(255,255,255,0.02); }
 
 .carousel-caption {
@@ -107,13 +106,82 @@ a[download], .download-box .btn{ background: rgba(154,47,255,0.12); border: 1px 
 
 
 
-/* Responsive tweaks */
+
 @media (max-width: 900px){
   .brand-sub{ display:none; }
   .logo-square{ width:40px; height:40px; }
   .highlight img{ max-height: 280px; object-fit: cover; }
 }
 
-/* Tiny helpers */
+
+
+.carousel-img {
+  width: 100%;
+  height: 45vh;            
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 8px 35px rgba(0,0,0,0.5);
+}
+
+.carousel-caption {
+  bottom: 10%;
+}
+
+
+.caption-mobile {
+  background: rgba(0,0,0,0.45);
+  padding: 10px 14px;
+  border-radius: 10px;
+  backdrop-filter: blur(3px);
+}
+
+.caption-mobile h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.caption-mobile p {
+  font-size: .85rem;
+  margin: 0;
+}
+
+
+
+@media (min-width: 768px) {
+  .carousel-img {
+    height: 55vh;  
+  }
+
+  .caption-mobile h3 {
+    font-size: 1.6rem;
+  }
+
+  .caption-mobile p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .carousel-img {
+    height: 70vh; 
+    border-radius: 20px;
+  }
+
+  .caption-mobile {
+    padding: 18px 25px;
+    max-width: 50%;
+    margin: auto;
+  }
+
+  .caption-mobile h3 {
+    font-size: 2.2rem;
+  }
+
+  .caption-mobile p {
+    font-size: 1.25rem;
+  }
+}
+
 .lead{ color: var(--muted); }
 .small{ color: var(--muted); font-size: .9rem; }
+
