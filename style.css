@@ -1,0 +1,119 @@
+:root{
+  --bg: #070707;
+  --card: #0f1113;
+  --muted: #9aa5b1;
+  --accent: #9a2fff;
+  --wine: #5b2430;
+  --glass: rgba(255,255,255,0.03);
+  --success: #2fb86e;
+  --text: #eef2f5;
+  --soft: rgba(255,255,255,0.04);
+  --radius: 12px;
+  --shadow: 0 8px 30px rgba(0,0,0,0.6);
+}
+
+*{ box-sizing: border-box; }
+body{
+  margin:0;
+  background: linear-gradient(180deg,#040405 0%, #0b0b0c 100%);
+  color:var(--text);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.45;
+}
+
+/* NAVBAR */
+.site-header .navbar{
+  background: linear-gradient(90deg, rgba(91,36,48,0.95), rgba(60,20,34,0.95));
+  padding: .6rem 0;
+  box-shadow: var(--shadow);
+}
+.logo-square{
+  width:48px;height:48px;background:#fff;color:var(--wine);display:flex;align-items:center;justify-content:center;border-radius:10px;font-weight:800;
+}
+.brand-title{ font-weight:700; font-size:1.05rem; color:var(--text); }
+.brand-sub{ font-size:0.7rem; color:var(--muted); display:block; }
+
+/* Buttons */
+.btn-primary{ background: linear-gradient(90deg, var(--accent), #5b24b0); border:0; box-shadow: 0 6px 18px rgba(154,47,255,0.12); }
+.btn-primary:hover{ transform: translateY(-2px); }
+.btn-wine{ background:var(--wine); color:var(--text); border:0; }
+.btn-outline-light{ border:1px solid rgba(255,255,255,0.08); color:var(--text); }
+
+/* Cards */
+.card{
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.04);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* Highlight */
+.highlight img{ border-top-left-radius: calc(var(--radius) - 2px); border-top-right-radius: calc(var(--radius) - 2px); }
+.highlight .card-body{ padding:1.6rem; }
+
+/* Form controls (maiores e mais visíveis) */
+.form-control, .form-select, textarea{
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.06);
+  color: var(--text);
+  padding: .85rem .9rem;
+  border-radius: 10px;
+  transition: .18s ease;
+  font-size: 1rem;
+}
+.form-control:focus, .form-select:focus, textarea:focus{
+  outline: none;
+  box-shadow: 0 6px 18px rgba(154,47,255,0.12);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+/* Subscribe card */
+.subscribe-card h5{ margin-bottom:1rem; color:var(--accent); font-weight:700; }
+
+/* Table */
+.table-hover tbody tr:hover{ background: rgba(154,47,255,0.04); transform: translateX(2px); }
+
+/* Sidebar */
+.ad-card, .contacts{ border-left: 4px solid rgba(154,47,255,0.12); }
+
+/* Section blocks */
+.section-block{ padding: 40px 0; margin-top: 24px; border-top: 1px solid rgba(255,255,255,0.02); }
+.section-block h3{ color: var(--accent); margin-bottom: 16px; }
+
+/* News cards */
+.news-card{ background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005)); border-radius:10px; }
+
+/* Download button style */
+a[download], .download-box .btn{ background: rgba(154,47,255,0.12); border: 1px solid rgba(154,47,255,0.14); color: var(--text); }
+
+/* Footer */
+.site-footer{ background: linear-gradient(90deg, rgba(91,36,48,0.95), rgba(60,20,34,0.95)); padding:28px 0; color:var(--text); margin-top:40px; border-top: 1px solid rgba(255,255,255,0.02); }
+
+.carousel-caption {
+  background: rgba(0,0,0,0.55);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+}
+
+.carousel-inner img {
+  object-fit: cover;
+  max-height: 500px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+
+
+
+/* Responsive tweaks */
+@media (max-width: 900px){
+  .brand-sub{ display:none; }
+  .logo-square{ width:40px; height:40px; }
+  .highlight img{ max-height: 280px; object-fit: cover; }
+}
+
+/* Tiny helpers */
+.lead{ color: var(--muted); }
+.small{ color: var(--muted); font-size: .9rem; }
