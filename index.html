@@ -5,18 +5,17 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Vision PRESS — Wordvision</title>
 
-  <!-- Bootstrap (opcional, já usado para componentes) -->
+  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Font Awesome -->
+
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-  <!-- CSS principal -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- NAVBAR -->
+
   <header class="site-header" role="banner">
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
@@ -50,10 +49,10 @@
   </header>
 
   <main class="container my-5" id="home" role="main">
-    <!-- CARROSSEL -->
+
 <div id="visionCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
 
-  <!-- Indicadores (bolinhas) -->
+
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#visionCarousel" data-bs-slide-to="0" class="active"></button>
     <button type="button" data-bs-target="#visionCarousel" data-bs-slide-to="1"></button>
@@ -62,7 +61,6 @@
 
   <div class="carousel-inner">
 
-    <!-- Slide 1 -->
     <div class="carousel-item active">
       <img src="plo4.jpeg" class="d-block w-100 rounded-4" alt="Notícia 1">
       <div class="carousel-caption d-none d-md-block">
@@ -71,7 +69,7 @@
       </div>
     </div>
 
-    <!-- Slide 2 -->
+ 
     <div class="carousel-item">
       <img src="soci3.jpeg" class="d-block w-100 rounded-4" alt="Notícia 2">
       <div class="carousel-caption d-none d-md-block">
@@ -80,7 +78,7 @@
       </div>
     </div>
 
-    <!-- Slide 3 -->
+
     <div class="carousel-item">
       <img src="int2.jpeg" class="d-block w-100 rounded-4" alt="Notícia 3">
       <div class="carousel-caption d-none d-md-block">
@@ -91,7 +89,7 @@
 
   </div>
 
-  <!-- Controles (setas) -->
+
   <button class="carousel-control-prev" type="button" data-bs-target="#visionCarousel" data-bs-slide="prev">
     <span class="carousel-control-prev-icon"></span>
   </button>
@@ -103,7 +101,7 @@
 </div>
 
     <div class="row g-4">
-      <!-- Conteúdo principal -->
+   
       <div class="col-lg-8">
         <article class="card mb-4 highlight">
           <img src="https://via.placeholder.com/1200x520.png?text=Destaque+da+Semana" class="card-img-top" alt="Destaque da Semana">
@@ -116,7 +114,7 @@
           </div>
         </article>
 
-        <!-- Formulário de Assinatura -->
+
         <section class="card mb-4 subscribe-card p-4" aria-labelledby="subscribe-title">
           <h5 id="subscribe-title">Receba notícias no WhatsApp / Email</h5>
           <form id="subscribeForm" class="row g-3">
@@ -206,7 +204,7 @@
         </section>
       </div>
 
-      <!-- SIDEBAR -->
+ 
       <aside class="col-lg-4">
         <div class="card mb-3 p-3 ad-card">
           <h6 class="mb-2">Publicidade</h6>
@@ -229,7 +227,7 @@
     </div>
   </main>
 
-  <!-- SEÇÕES EDITORIAIS (links para páginas internas) -->
+
   <section id="sociedade" class="section-block sociedade py-4">
     <div class="container">
       <h3>Sociedade</h3>
@@ -327,7 +325,7 @@
     </div>
   </section>
 
-  <!-- RODAPÉ -->
+
   <footer class="site-footer mt-5">
     <div class="container text-center">
       <div class="mb-3">
@@ -342,7 +340,7 @@
     </div>
   </footer>
 
-  <!-- Modal de sucesso (Bootstrap) -->
+
   <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content bg-dark text-light">
@@ -360,7 +358,7 @@
     </div>
   </div>
 
-  <!-- SCRIPTS -->
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     document.getElementById('subscribeForm')?.addEventListener('submit', function (e) {
@@ -371,4 +369,5 @@
     });
   </script>
 </body>
+
 </html>
